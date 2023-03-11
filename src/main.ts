@@ -1,4 +1,4 @@
-import './index.css'
+import "./main.css";
 
 // Theme selector
 
@@ -99,6 +99,12 @@ export interface DosProps {
 declare function Dos(root: HTMLDivElement, options?: Partial<DosOptions>): DosProps;
 
 document.addEventListener("DOMContentLoaded", () => {
+  const mobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+  if (mobile) {
+    document.querySelector("#mobile-support")?.classList.remove("hidden");
+    document.querySelector(".root")?.classList.add("hidden");
+  }
+
   applyTheme(currentTheme);
   syncPages();
 
