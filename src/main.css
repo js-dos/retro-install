@@ -1,0 +1,26 @@
+@font-face {
+    font-family: "DOS";
+    src: url("../public/dos.ttf");
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+.root, #mobile-support {
+    @apply h-full;
+}
+
+.font-dos {
+    font-family: DOS, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.navbar {
+    background: linear-gradient(-90deg,hsl(var(--b3)) 0%,hsl(var(--b2)) 100%);
+}
+
+.mockup-code pre[data-prefix]:before {
+    width: 3rem;
+}
