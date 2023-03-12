@@ -7,6 +7,7 @@ export default defineConfig({
       input: {
         win1x: resolve(__dirname, 'win1x.html'),
         win2x: resolve(__dirname, 'win2x.html'),
+        win30: resolve(__dirname, 'win30.html'),
       },
     },
   },
