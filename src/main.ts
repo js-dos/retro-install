@@ -105,6 +105,10 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelector(".root")?.classList.add("hidden");
   }
 
+  document.querySelector("#page-select")?.addEventListener("change", (e: any) => {
+    location.href = e.currentTarget.value;
+  });
+
   applyTheme(currentTheme);
   syncPages();
 

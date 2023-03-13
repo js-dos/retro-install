@@ -10,6 +10,7 @@ export default defineConfig({
         win30: resolve(__dirname, 'win30.html'),
         win311: resolve(__dirname, 'win311.html'),
         win95: resolve(__dirname, 'win95.html'),
+        win98: resolve(__dirname, 'win98.html'),
       },
     },
   },

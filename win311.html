@@ -25,6 +25,23 @@
 </head>
 
 <body data-theme='aqua'>
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();
+    for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+    k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(92792276, "init", {
+          clickmap:true,
+          trackLinks:true,
+          accurateTrackBounce:true
+    });
+  </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/92792276" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <!-- /Yandex.Metrika counter -->
+
   <div id="mobile-support" class="flex flex-row justify-center items-center hidden">
     <div class="mockup-window border bg-base-300 w-3/4">
       <div class="flex justify-center px-4 py-16 bg-base-200 text-xl">
@@ -39,8 +56,13 @@
     <div class="font-dos flex flex-col w-96 h-full">
       <div class="navbar px-4 bg-base-300">
         <div class="text-xl flex-1">Retro Install: Windows</div>
-        <select class="select select-bordered">
-          <option>Win 3.11</option>
+        <select id="page-select" class="select select-bordered">
+          <option value="win1x.html"><a href="win1x.html">Win 1.x</a></option>
+          <option value="win2x.html"><a href="win2x.html">Win 2.x</a></option>
+          <option value="win30.html"><a href="win30.html">Win 3.0</a></option>
+          <option selected value="win311.html"><a href="win311.html">Win 3.11</a></option>
+          <option value="win95.html"><a href="win95.html">Win 95</a></option>
+          <option value="win98.html"><a href="win98.html">Win 98</a></option>
         </select>
       </div>
       <div id="topics" class="bg-base-200 flex-1 px-8 py-4 overflow-auto">
